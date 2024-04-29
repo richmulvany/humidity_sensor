@@ -12,7 +12,7 @@
 #define DHTTYPE DHT22
 
 DHT_Unified dht(DHTPIN, DHTTYPE);
-uint32_t delayMS = 2000;  // Set a fixed delay of 2000 milliseconds (2 seconds)
+uint32_t delayMS = 60000;  // Set a fixed delay of 60000 milliseconds (1 minute)
 
 // Set up the Adafruit IO Wi-Fi connection
 AdafruitIO_WiFi io(IO_USERNAME, IO_KEY, WIFI_SSID, WIFI_PASS);
@@ -42,24 +42,31 @@ void loop() {
   delay(delayMS);
 
   sensors_event_t event;
+  char tempBuffer[20];  // Buffer to hold formatted temperature
+  char humBuffer[20];   // Buffer to hold formatted humidity
+  
   dht.temperature().getEvent(&event);
   if (!isnan(event.temperature)) {
+    // Format temperature with 1 decimal place
+    sprintf(tempBuffer, "%.1f", event.temperature);
     Serial.print("Temperature: ");
-    Serial.print(event.temperature);
+    Serial.print(tempBuffer);
     Serial.println("°C");
-    // Send temperature to Adafruit IO
-    temperatureFeed->save(event.temperature);
+    // Send formatted temperature to Adafruit IO
+    temperatureFeed->save(tempBuffer);
   } else {
     Serial.println("Error reading temperature!");
   }
 
   dht.humidity().getEvent(&event);
   if (!isnan(event.relative_humidity)) {
+    // Format humidity with 1 decimal place
+    sprintf(humBuffer, "%.1f", event.relative_humidity);
     Serial.print("Humidity: ");
-    Serial.print(event.relative_humidity);
+    Serial.print(humBuffer);
     Serial.println("%");
-    // Send humidity to Adafruit IO
-    humidityFeed->save(event.relative_humidity);
+    // Send formatted humidity to Adafruit IO
+    humidityFeed->save(humBuffer);
   } else {
     Serial.println("Error reading humidity!");
   }
