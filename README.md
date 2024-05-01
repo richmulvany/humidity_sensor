@@ -26,7 +26,18 @@ The Arduino [sketch](https://github.com/richmulvany/deej/tree/master/Arduino/mix
 
 ### Data Upload
 
+I used Adafruit IO for uploading the data collection. They provide 30 days of data storage for up to 10 streams of data for in their free basic plan. My DHT22 is currently using 2 of those streams to stream the temperature and humidity data it is collecting. Adafruit IO also provides some data visualisation of the streams on their site, as well as the ability to have actions automated based on the real-time data. 
+
+![Data Feeds](https://i.imgur.com/1gKBF6E.png)
+
+![Data Visualisation](https://i.imgur.com/OAueMAA.png)
+
 ### Push Notifications
+
+I had anticipated push notifications to be the most difficult step in the process of this project, but it turned out to be extremely simple to set up. I was looking to create a warning system whereby I recieved a push notification on my phone if my bedroom humidity gets to highm using the data feed being uploaded to Adafruit IO. It turns out that there are multiple options to do this easily; I used an app called IFTTT which lets you produce 'applets' to perform tasks such as this. 
+
+|IFTTT has a simple, although rather rudementary and arguably overly minimilistic UI for setting up a trigger then action which can pull triggers from lots of sources including Adafruit IO.|![Applet Notification](https://i.imgur.com/BplXoob.png)|![Applet Creation](https://i.imgur.com/cqKTodE.png)|
+|--|--|--|
 
 ### Schematic
 
