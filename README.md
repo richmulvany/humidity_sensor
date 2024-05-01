@@ -44,3 +44,11 @@ I had anticipated push notifications to be the most difficult step in the proces
 ![Schematic](https://i0.wp.com/randomnerdtutorials.com/wp-content/uploads/2019/04/dht_esp32_bb.png?w=714&quality=100&strip=all&ssl=1)
 
 The above schematic details the connection between the DHT22 sensor and the ESP32 board. Note that the third pin is not utilised, and ground goes through the fourth pin. 
+
+### Assembly
+
+Here is how the schematic looks on a breadboard in the real:
+
+![Assembled Components](https://i.imgur.com/axD5lwk.jpg) 
+
+
