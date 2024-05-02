@@ -11,7 +11,7 @@ I used the following components in this build:
 The DHT22 data line requires a pull-up resistor because the sensor uses an open-drain or open-collector output. This means that the sensor can pull the data line to ground but cannot drive it high itself. The resistor is needed to pull the line to a high state (VCC) when the sensor is not pulling it low. This helps avoid inconsistent data outputs.
 
 ### 3D Printing
-![Printed Parts](https://i.imgur.com/pD0fAVj.jpg)
+![Printed Parts](https://i.imgur.com/QjTFGLD.png)
 
 I designed parts for printing using AutoDesk Fusion; the STL files are provided in this repo [here.](https://github.com/richmulvany/deej/tree/master/stl)
 
