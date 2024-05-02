@@ -1,7 +1,6 @@
 # Humidity sensor made with DHT22 on an ESP32 which collects real-time data and sends mobile push notification when room humidity reaches threshold
 
 ### Components Required
-![Components](https://i.imgur.com/Il0kmBM.jpg)
 
 I used the following components in this build:
 - ESP32 dev board
