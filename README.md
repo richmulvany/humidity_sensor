@@ -50,6 +50,6 @@ The above schematic details the connection between the DHT22 sensor and the ESP3
 
 Here is how the schematic looks on a breadboard in the real:
 
-![Assembled Components](https://i.imgur.com/axD5lwk.jpg) 
+![Assembled Components](https://i.imgur.com/93VUnxb.png) 
 
 
