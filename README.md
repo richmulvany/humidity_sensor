@@ -31,7 +31,7 @@ I used Adafruit IO for uploading the data collection. They provide 30 days of da
 
 ![Data Feeds](https://i.imgur.com/yRvxgWi.png)
 
-![Data Visualisation](https://i.imgur.com/YX1Rwe9.png)
+![Data Visualisation](https://i.imgur.com/h7Ds3i2.png)
 
 ### Push Notifications
 
