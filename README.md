@@ -13,7 +13,7 @@ I used the following components in this build:
 The DHT22 data line requires a pull-up resistor because the sensor uses an open-drain or open-collector output. This means that the sensor can pull the data line to ground but cannot drive it high itself. The resistor is needed to pull the line to a high state (VCC) when the sensor is not pulling it low. This helps avoid inconsistent data outputs.
 
 ### 3D Printing
-![Printed Parts](https://i.imgur.com/QjTFGLD.png)
+![Printed Parts](https://i.imgur.com/PaiX6pz.png)
 
 I designed parts for printing using AutoDesk Fusion; the STL files are provided in this repo [here.](https://github.com/richmulvany/deej/tree/master/stl)
 
@@ -29,9 +29,9 @@ The Arduino [sketch](https://github.com/richmulvany/deej/tree/master/Arduino/mix
 
 I used Adafruit IO for uploading the data collection. They provide 30 days of data storage for up to 10 streams of data for in their free basic plan. My DHT22 is currently using 2 of those streams to stream the temperature and humidity data it is collecting. Adafruit IO also provides some data visualisation of the streams on their site, as well as the ability to have actions automated based on the real-time data. 
 
-![Data Feeds](https://i.imgur.com/1gKBF6E.png)
+![Data Feeds](https://i.imgur.com/yRvxgWi.png)
 
-![Data Visualisation](https://i.imgur.com/OAueMAA.png)
+![Data Visualisation](https://i.imgur.com/YX1Rwe9.png)
 
 ### Push Notifications
 
