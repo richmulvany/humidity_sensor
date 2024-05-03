@@ -1,5 +1,7 @@
 # Humidity sensor made with DHT22 on an ESP32 which collects real-time data and sends mobile push notification when room humidity reaches threshold
 
+The previous owners of my house at some point had the genius idea of covering absolutely every visible surface in my bedroom with an incredibly thick coat of white paint. This included the vent above my window designed to facilitate airflow and reduce the risk of mould forming on the windowframe. This has caused me to have problems with mould growth on the window, which was originally wood but has been replaced with vinyl frames, and although the risk of damage to the frame has been removed, the problem still there. I try to open my window every day to maintain airflow, but I am a distractible person and often forget. This has led me to start this project, which will involve creating a humidity sensor for the room which uploads real-time data and sends me push notifications on my mobile to open my window when humidity levels get too high, in an attempt to remind myself to always be getting enough airflow into my bedroom. 
+
 ### Components Required
 
 I used the following components in this build:
